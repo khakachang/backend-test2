@@ -19,6 +19,6 @@ async def root():
     return {"msg": "Hello World Updated"}
 
 
-@app.get("/student", response_model=list[Student])
+@app.get("/students", response_model=list[Student])
 async def get_students() -> list[Student]:
     return my_students 
